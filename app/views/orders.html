@@ -1,0 +1,13 @@
+<h2>{{customer.name}}'s Order</h2>
+
+<table class="table">
+    <tr>
+        <th>Product</th>
+        <th>Total</th>
+    </tr>
+    
+    <tr ng-repeat = "order in customer.orders">
+        <td>{{order.product}}</td>
+        <td>{{order.total | currency}}</td>
+    </tr>
+</table>
